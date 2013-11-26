@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Starter App</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- iPhone -->
+    <link href="http://cdn.tapquo.com/lungo/icon-57.png" sizes="57x57" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-320x460.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPhone (Retina) -->
+    <link href="http://cdn.tapquo.com/lungo/icon-114.png" sizes="114x114" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-640x920.png" media="(device-width: 320px) and (device-height: 480px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPhone 5 -->
+    <link href="http://cdn.tapquo.com/lungo/startup-image-640x1096.png" media="(device-width: 320px) and (device-height: 568px)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- iPad -->
+    <link href="http://cdn.tapquo.com/lungo/icon-72.png" sizes="72x72" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-768x1004.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-748x1024.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 1)" rel="apple-touch-startup-image">
+
+    <!-- iPad (Retina) -->
+    <link href="http://cdn.tapquo.com/lungo/icon-144.png" sizes="144x144" rel="apple-touch-icon">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-1536x2008.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: portrait)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+    <link href="http://cdn.tapquo.com/lungo/startup-image-1496x2048.png" media="(device-width: 768px) and (device-height: 1024px)
+             and (orientation: landscape)
+             and (-webkit-device-pixel-ratio: 2)" rel="apple-touch-startup-image">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="components/lungo.css">
+    <link rel="stylesheet" href="components/lungo.theme.css">
+    <link rel="stylesheet" href="components/lungo.icon.css">
+    <!-- App Stylesheet -->
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body class="app" data-position="fixed">
+        
+	<section id="main" data-transition="slide">
+	    <header data-title="Layout">
+	        <nav>
+	            <a href="#" data-view-aside="asideMenu" data-icon="menu"></a>
+	        </nav>
+	        <nav class="on-right">
+	        	<a href="#"  ><abbr class="text tiny ">v1.0</abbr></a>		
+	            <!-- <button data-view-section="splash" data-async="static/sections/splash.html" data-icon="user"></button> -->
+	        </nav>
+	    </header>
+	
+	    <article id="layout-art1"><div class="empty">
+	            <span class="icon user"></span>
+	            <strong>Profile Empty</strong>
+	            <small>When you back a project or follow a friend, their activity will show up here.</small>
+	        </div>	
+	    </article>
+	    <article id="layout-art2">
+	        <div class="empty">
+	            <span class="icon inbox"></span>
+	            <strong>Inbox Empty</strong>
+	            <small>When you back a project or follow a friend, their activity will show up here.</small>
+	        </div>
+	    </article>
+	    <article id="layout-art3">
+	        <div class="empty">
+	            <span class="icon comments"></span>
+	            <strong>Comments Empty</strong>
+	            <small>When you back a project or follow a friend, their activity will show up here.</small>
+	        </div>
+	    </article>
+	    <article id="layout-art4">
+	        <div class="empty">
+	            <span class="icon cog"></span>
+	            <strong>Settings Empty</strong>
+	            <small>When you back a project or follow a friend, their activity will show up here.</small>
+	        </div>
+	    </article>
+	
+	    <footer>
+	        <nav>
+	            <a href="#" data-view-article="layout-art1" data-icon="user" class="active"></a>
+	            <a href="#" data-view-article="layout-art2" data-icon="inbox" data-count="80"></a>
+	            <a href="#" data-view-article="layout-art3" data-icon="comments"></a>
+	            <a href="#" data-view-article="layout-art4" data-icon="cog"></a>
+	        </nav>
+	    </footer>
+	</section>
+
+    <!-- Lungo dependencies -->
+    <script src="components/quo.js"></script>
+    <script src="components/lungo.js"></script>
+    <!-- LungoJS - Sandbox App -->
+    <script>
+        Lungo.init({
+            name: 'Starter App',
+            version: '1.0',
+           resources: [
+                'views/asideMenu.html'],
+            history: false
+        });
+    </script>
+    <script src="js/app.js"></script>
+    <!-- PhoneGap -->
+    <script src="phonegap.js"></script>
+</body>
+</html>
